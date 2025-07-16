@@ -173,9 +173,9 @@ const CertificationSection = () => {
                         During my internship at TSS Consultancy, I had the opportunity to work on real-world projects
                         involving backend development, automation, and cloud integration. I gained hands-on experience with
                         technologies like Java, Spring Boot, Selenium, Jsoup, and AWS. I was involved in debugging production
-                        environments, writing scalable code, and collaborating with senior developers to enhance the application’s
+                        environments, writing scalable code, and collaborating with senior developers to enhance the application
                         performance. This experience solidified my skills in software engineering, CI/CD pipelines, and team
-                        collaboration — preparing me for full-time roles in DevOps and backend engineering.
+                        collaboration and preparing me for full-time roles in DevOps and backend engineering.
                     </p>
                 </div>
 
