@@ -1,0 +1,174 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\components\\portfolio\\Certifications.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:editable-showcase-hub-main\\src\\components\\portfolio\\Certifications.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\components\\portfolio\\SkillsSection.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:editable-showcase-hub-main\\src\\components\\portfolio\\SkillsSection.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\pages\\Index.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:editable-showcase-hub-main\\src\\pages\\Index.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\components\\portfolio\\ProjectsSection.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:editable-showcase-hub-main\\src\\components\\portfolio\\ProjectsSection.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\components\\portfolio\\Navigation.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:editable-showcase-hub-main\\src\\components\\portfolio\\Navigation.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\components\\portfolio\\HeroSection.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:editable-showcase-hub-main\\src\\components\\portfolio\\HeroSection.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:editable-showcase-hub-main\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\components\\portfolio\\ContactSection.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:editable-showcase-hub-main\\src\\components\\portfolio\\ContactSection.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\components\\portfolio\\AboutSection.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:editable-showcase-hub-main\\src\\components\\portfolio\\AboutSection.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SkillsSection.tsx",
+              "DocumentMoniker": "C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\components\\portfolio\\SkillsSection.tsx",
+              "RelativeDocumentMoniker": "editable-showcase-hub-main\\src\\components\\portfolio\\SkillsSection.tsx",
+              "ToolTip": "C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\components\\portfolio\\SkillsSection.tsx",
+              "RelativeToolTip": "editable-showcase-hub-main\\src\\components\\portfolio\\SkillsSection.tsx",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAUwFYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-16T12:02:30.231Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.tsx",
+              "DocumentMoniker": "C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\pages\\Index.tsx",
+              "RelativeDocumentMoniker": "editable-showcase-hub-main\\src\\pages\\Index.tsx",
+              "ToolTip": "C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\pages\\Index.tsx",
+              "RelativeToolTip": "editable-showcase-hub-main\\src\\pages\\Index.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-16T15:25:23.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Certifications.tsx",
+              "DocumentMoniker": "C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\components\\portfolio\\Certifications.tsx",
+              "RelativeDocumentMoniker": "editable-showcase-hub-main\\src\\components\\portfolio\\Certifications.tsx",
+              "ToolTip": "C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\components\\portfolio\\Certifications.tsx",
+              "RelativeToolTip": "editable-showcase-hub-main\\src\\components\\portfolio\\Certifications.tsx",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAiwKcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-16T14:55:28.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Navigation.tsx",
+              "DocumentMoniker": "C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\components\\portfolio\\Navigation.tsx",
+              "RelativeDocumentMoniker": "editable-showcase-hub-main\\src\\components\\portfolio\\Navigation.tsx",
+              "ToolTip": "C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\components\\portfolio\\Navigation.tsx",
+              "RelativeToolTip": "editable-showcase-hub-main\\src\\components\\portfolio\\Navigation.tsx",
+              "ViewState": "AgIAACsAAAAAAAAAAAAswDgAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-16T11:59:53.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ContactSection.tsx",
+              "DocumentMoniker": "C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\components\\portfolio\\ContactSection.tsx",
+              "RelativeDocumentMoniker": "editable-showcase-hub-main\\src\\components\\portfolio\\ContactSection.tsx",
+              "ToolTip": "C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\components\\portfolio\\ContactSection.tsx",
+              "RelativeToolTip": "editable-showcase-hub-main\\src\\components\\portfolio\\ContactSection.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-16T12:10:21.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProjectsSection.tsx",
+              "DocumentMoniker": "C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\components\\portfolio\\ProjectsSection.tsx",
+              "RelativeDocumentMoniker": "editable-showcase-hub-main\\src\\components\\portfolio\\ProjectsSection.tsx",
+              "ToolTip": "C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\components\\portfolio\\ProjectsSection.tsx",
+              "RelativeToolTip": "editable-showcase-hub-main\\src\\components\\portfolio\\ProjectsSection.tsx",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAwHQAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-16T12:03:39.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\index.css",
+              "RelativeDocumentMoniker": "editable-showcase-hub-main\\src\\index.css",
+              "ToolTip": "C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\index.css",
+              "RelativeToolTip": "editable-showcase-hub-main\\src\\index.css",
+              "ViewState": "AgIAADoAAAAAAAAAAAAqwKQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-16T11:33:28.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AboutSection.tsx",
+              "DocumentMoniker": "C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\components\\portfolio\\AboutSection.tsx",
+              "RelativeDocumentMoniker": "editable-showcase-hub-main\\src\\components\\portfolio\\AboutSection.tsx",
+              "ToolTip": "C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\components\\portfolio\\AboutSection.tsx",
+              "RelativeToolTip": "editable-showcase-hub-main\\src\\components\\portfolio\\AboutSection.tsx",
+              "ViewState": "AgIAABcAAAAAAAAAAAAowEwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-16T11:20:54.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HeroSection.tsx",
+              "DocumentMoniker": "C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\components\\portfolio\\HeroSection.tsx",
+              "RelativeDocumentMoniker": "editable-showcase-hub-main\\src\\components\\portfolio\\HeroSection.tsx",
+              "ToolTip": "C:\\Users\\Shivani\\Downloads\\editable-showcase-hub-main\\editable-showcase-hub-main\\src\\components\\portfolio\\HeroSection.tsx",
+              "RelativeToolTip": "editable-showcase-hub-main\\src\\components\\portfolio\\HeroSection.tsx",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAuwH4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-16T11:05:10.596Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
