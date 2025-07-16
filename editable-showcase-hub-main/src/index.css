@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =============================================
+   Portfolio Design System - Spider-Man Noir Edition
+============================================= */
+
+@layer base {
+    :root {
+        /* ------------------
+       Color Scheme
+    ------------------ */
+        /* Backgrounds */
+        --background: 0 0% 5%; /* Deep black */
+        --foreground: 0 0% 95%; /* Off-white text */
+        --card: 0 0% 8%; /* Slightly lighter card */
+        --card-foreground: 0 0% 90%; /* Card text */
+        --popover: 0 0% 10%; /* Popover matches card */
+        --popover-foreground: 0 0% 90%;
+        /* Primary Colors - Spider Red */
+        --primary: 0 85% 58%; /* Vibrant Spider-Man red */
+        --primary-foreground: 0 0% 98%; /* White text on red */
+        --primary-glow: 0 85% 68%; /* Brighter red glow */
+        /* Secondary Colors - Dark Accent */
+        --secondary: 0 0% 15%; /* Dark gray */
+        --secondary-foreground: 0 0% 95%; /* Light text */
+        /* Muted Colors */
+        --muted: 0 0% 12%; /* Dark muted */
+        --muted-foreground: 0 0% 70%; /* Gray text */
+        /* Accent Colors - Web Gray */
+        --accent: 0 0% 40%; /* Web/silk gray */
+        --accent-foreground: 0 0% 95%; /* Light text */
+        /* Status Colors */
+        --destructive: 0 80% 50%; /* Bright error red */
+        --destructive-foreground: 0 0% 98%;
+        /* UI Elements */
+        --border: 0 0% 20%; /* Border */
+        --input: 0 0% 14%; /* Input fields */
+        --ring: 0 85% 58%; /* Red focus ring */
+        /* ------------------
+       Custom Tokens
+    ------------------ */
+        /* Gradients */
+        --hero-gradient: linear-gradient( 135deg, hsl(0 85% 58% / 0.3), hsl(0 0% 5% / 0.9) );
+        --card-gradient: linear-gradient( 145deg, hsl(0 0% 8% / 0.9), hsl(0 0% 12% / 0.7) );
+        /* Web Effects */
+        --web-texture: url('/images/spider-web.png');
+        --web-overlay: linear-gradient( 135deg, transparent 95%, hsl(0 0% 40% / 0.1) 96%, transparent 97% );
+        /* Shadows */
+        --shadow-soft: 0 4px 24px hsl(0 0% 0% / 0.8);
+        --shadow-glow: 0 0 48px hsl(0 85% 58% / 0.3);
+        --shadow-card: 0 10px 40px hsl(0 0% 0% / 0.9);
+        --shadow-text: 0 2px 8px hsl(0 0% 0% / 0.9);
+        /* Typography */
+        --font-heading: 'Bebas Neue', 'Helvetica Neue', sans-serif; /* Bold comic-style */
+        --font-body: 'Roboto Condensed', sans-serif; /* Clean and readable */
+        /* Animations */
+        --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        /* Borders */
+        --radius: 0.25rem; /* Slightly rounded */
+        /* Sidebar */
+        --sidebar-background: 0 0% 8%;
+        --sidebar-foreground: 0 0% 95%;
+        --sidebar-primary: 0 85% 58%;
+        --sidebar-primary-foreground: 0 0% 98%;
+        --sidebar-accent: 0 0% 40%;
+        --sidebar-accent-foreground: 0 0% 95%;
+        --sidebar-border: 0 0% 20%;
+        --sidebar-ring: 0 85% 58%;
+    }
+
+    /* Dark Mode - More intense */
+    .dark {
+        --background: 0 0% 3%;
+        --foreground: 0 0% 98%;
+        --card: 0 0% 6%;
+        --card-foreground: 0 0% 92%;
+        --primary: 0 85% 65%;
+        --primary-glow: 0 85% 75%;
+        --shadow-glow: 0 0 64px hsl(0 85% 65% / 0.4);
+    }
+}
+
+@layer components {
+    /* Hero Text Styles */
+    .hero-text {
+        @apply text-foreground font-heading font-bold;
+        text-shadow: var(--shadow-text);
+        letter-spacing: 0.05em;
+        line-height: 1;
+        position: relative;
+        &::after
+
+{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+    transform: scaleX(0);
+    transition: var(--transition-smooth);
+}
+
+&:hover::after {
+    transform: scaleX(1);
+}
+
+}
+
+/* Spider-Web Card */
+.web-card {
+    @apply relative overflow-hidden;
+    &::before
+
+{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: var(--web-overlay);
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+}
+
+/* Spider-Logo Badge */
+.spider-badge {
+    @apply bg-primary text-primary-foreground p-2 rounded-full;
+    clip-path: polygon( 50% 0%, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0% 50%, 15% 15% );
+}
+
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        font-family: var(--font-body);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-heading);
+        font-weight: 700;
+        letter-spacing: 0.03em;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+        background: hsl(0 0% 8%);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: hsl(0 85% 58% / 0.6);
+        border-radius: 4px;
+        &:hover
+
+{
+    background: hsl(0 85% 58%);
+}
+
+}
+}
