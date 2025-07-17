@@ -5,9 +5,9 @@ const SkillsSection = () => {
         {
             title: "Programming Languages",
             skills: [
-                { name: "Java", level: 90 },
-                { name: "C++", level: 85 },
-                { name: "JavaScript", level: 80 },
+                { name: "Java", level: 75 },
+                { name: "C++", level: 78 },
+                { name: "JavaScript", level: 79 },
                 { name: "PHP", level: 75 },
                 { name: "TypeScript", level: 70 }
             ]
@@ -15,9 +15,9 @@ const SkillsSection = () => {
         {
             title: "Backend & Tools",
             skills: [
-                { name: "Spring Boot", level: 88 },
-                { name: "MySQL", level: 85 },
-                { name: "Firebase", level: 80 },
+                { name: "Spring Boot", level: 71 },
+                { name: "MySQL", level: 68 },
+                { name: "Firebase", level: 81 },
                 { name: "Jsoup", level: 78 },
                 { name: "Selenium", level: 75 }
             ]
@@ -29,7 +29,6 @@ const SkillsSection = () => {
                 { name: "Jenkins (CI/CD)", level: 85 },
                 { name: "AWS", level: 78 },
                 { name: "Linux CLI", level: 82 },
-                { name: "Figma", level: 65 }
             ]
         }
     ];
