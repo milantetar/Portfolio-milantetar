@@ -1,75 +1,64 @@
-import { useEffect, useRef, useState } from 'react';
+﻿import { useEffect, useRef, useState } from 'react';
 
 const BackgroundMusic = () => {
     const audioRef = useRef<HTMLAudioElement | null>(null);
     const [isPlaying, setIsPlaying] = useState(false);
-    const [userInteracted, setUserInteracted] = useState(false);
+    const [isSupported, setIsSupported] = useState(true);
 
-    useEffect(() => {
-        const tryPlay = () => {
-            if (audioRef.current && !userInteracted) {
-                audioRef.current
-                    .play()
-                    .then(() => {
-                        setIsPlaying(true);
-                        setUserInteracted(true);
-                    })
-                    .catch(() => {
-                        // Wait for interaction
-                        setUserInteracted(false);
+    const startMusic = () => {
+        const audio = audioRef.current;
+        if (audio && !isPlaying) {
+            audio.volume = 0.5; // Keep it civil
+            const playPromise = audio.play();
+            if (playPromise !== undefined) {
+                playPromise
+                    .then(() => setIsPlaying(true))
+                    .catch((err) => {
+                        console.error('Audio playback failed:', err);
+                        setIsSupported(false);
                     });
             }
-        };
+        }
+    };
 
-        tryPlay();
+    useEffect(() => {
+        const audio = audioRef.current;
+        if (audio) {
+            audio.load(); // Preload the goodness
+            const canPlay = audio.canPlayType('audio/mpeg') || audio.canPlayType('audio/wav');
+            if (!canPlay) setIsSupported(false);
+        }
 
-        const handleInteraction = () => {
-            if (audioRef.current && !isPlaying) {
-                audioRef.current.play().then(() => {
-                    setIsPlaying(true);
-                });
-            }
-            setUserInteracted(true);
-            document.removeEventListener('click', handleInteraction);
-            document.removeEventListener('touchstart', handleInteraction);
-        };
-
-        document.addEventListener('click', handleInteraction);
-        document.addEventListener('touchstart', handleInteraction);
+        // Auto-play on first interaction
+        const handleInteraction = () => startMusic();
+        document.addEventListener('click', handleInteraction, { once: true });
+        document.addEventListener('touchstart', handleInteraction, { once: true });
+        document.addEventListener('keydown', handleInteraction, { once: true });
 
         return () => {
             document.removeEventListener('click', handleInteraction);
             document.removeEventListener('touchstart', handleInteraction);
+            document.removeEventListener('keydown', handleInteraction);
         };
-    }, [isPlaying, userInteracted]);
-
-    const toggleMusic = () => {
-        if (audioRef.current) {
-            if (isPlaying) {
-                audioRef.current.pause();
-                setIsPlaying(false);
-            } else {
-                audioRef.current.play();
-                setIsPlaying(true);
-            }
-        }
-    };
+    }, []);
 
     return (
         <>
             <audio
                 ref={audioRef}
-                src="/your-music.mp3"
+                src="/bg-music.mp3"
                 loop
                 preload="auto"
-            />
-            {/* Optional Toggle Button */}
-            <button
-                onClick={toggleMusic}
-                className="fixed bottom-4 right-4 z-50 bg-primary text-white px-4 py-2 rounded shadow-md hover:bg-primary/90"
+                data-fallback-src="/bg-music.wav"
             >
-                {isPlaying ? 'Pause Music' : 'Play Music'}
-            </button>
+                Your browser does not support the audio element.
+            </audio>
+
+            {!isSupported && (
+                <div className="fixed inset-0 bg-red-900 text-white z-50 flex items-center justify-center text-center px-4">
+                    <p className="text-lg">Sorry, your device/browser doesn’t support audio playback. 🎵</p>
+                </div>
+            )}
         </>
     );
 };
