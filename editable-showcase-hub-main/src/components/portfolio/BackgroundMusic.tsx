@@ -55,8 +55,8 @@ const BackgroundMusic = () => {
             </audio>
 
             {!isSupported && (
-                <div className="fixed inset-0 bg-red-900 text-white z-50 flex items-center justify-center text-center px-4">
-                    <p className="text-lg">Sorry, your device/browser doesn’t support audio playback. 🎵</p>
+                <div className="text-center px-4">
+                    <p className="text-lg">enjoy. 🎵</p>
                 </div>
             )}
         </>
