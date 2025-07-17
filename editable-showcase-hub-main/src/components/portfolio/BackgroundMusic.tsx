@@ -8,7 +8,7 @@ const BackgroundMusic = () => {
     const startMusic = () => {
         const audio = audioRef.current;
         if (audio && !isPlaying) {
-            audio.volume = 0.5; // Keep it civil
+            audio.volume = 0.5;
             const playPromise = audio.play();
             if (playPromise !== undefined) {
                 playPromise
@@ -24,12 +24,11 @@ const BackgroundMusic = () => {
     useEffect(() => {
         const audio = audioRef.current;
         if (audio) {
-            audio.load(); // Preload the goodness
+            audio.load();
             const canPlay = audio.canPlayType('audio/mpeg') || audio.canPlayType('audio/wav');
             if (!canPlay) setIsSupported(false);
         }
 
-        // Auto-play on first interaction
         const handleInteraction = () => startMusic();
         document.addEventListener('click', handleInteraction, { once: true });
         document.addEventListener('touchstart', handleInteraction, { once: true });
@@ -55,8 +54,10 @@ const BackgroundMusic = () => {
             </audio>
 
             {!isSupported && (
-                <div className="text-center px-4">
-                    <p className="text-lg">enjoy. 🎵</p>
+                <div className="fixed inset-0 flex items-center justify-center bg-black/80 z-50">
+                    <p className="text-3xl text-white animate-fade-in-scale font-semibold">
+                        enjoy. 🎵
+                    </p>
                 </div>
             )}
         </>
