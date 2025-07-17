@@ -37,7 +37,7 @@ const HeroSection = () => {
 
                     {/* Subtitle */}
                     <h2 className="text-base sm:text-xl md:text-2xl text-muted-foreground mb-8 font-light uppercase tracking-wider">
-                        Junior Software Engineer | Backend & DevOps Enthusiast
+                        Junior Software Engineer | Backend & DevOps Engineer
                     </h2>
 
                     {/* Description */}

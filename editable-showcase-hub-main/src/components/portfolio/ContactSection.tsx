@@ -3,8 +3,11 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
+import { useForm, ValidationError } from '@formspree/react';
 
 const ContactSection = () => {
+    const [state, handleSubmit] = useForm("mwpqpejw");
+
     const contactInfo = [
         {
             icon: Mail,
@@ -29,7 +32,6 @@ const ContactSection = () => {
     const socialLinks = [
         { icon: Github, href: "https://github.com/milantetar", label: "GitHub" },
         { icon: Linkedin, href: "https://linkedin.com/in/milan-tetar-80192126a", label: "LinkedIn" },
-        { icon: Twitter, href: "#", label: "Twitter" } // Update if available
     ];
 
     return (
@@ -41,8 +43,7 @@ const ContactSection = () => {
                     </h2>
                     <div className="w-20 h-1 bg-primary mx-auto rounded-full mb-6"></div>
                     <p className="text-muted-foreground max-w-2xl mx-auto">
-                        I'm always open to discussing new opportunities, interesting projects,
-                        or just having a friendly chat about backend development, DevOps, and innovation.
+                        I'm always open to discussing new opportunities, projects, or just connecting.
                     </p>
                 </div>
 
@@ -59,7 +60,6 @@ const ContactSection = () => {
                             </p>
                         </div>
 
-                        {/* Contact Details */}
                         <div className="space-y-4">
                             {contactInfo.map((contact) => (
                                 <Card
@@ -70,7 +70,7 @@ const ContactSection = () => {
                                         href={contact.href}
                                         className="flex items-center gap-4 group-hover:text-primary transition-colors"
                                     >
-                                        <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                                        <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20">
                                             <contact.icon className="w-6 h-6 text-primary" />
                                         </div>
                                         <div>
@@ -82,7 +82,6 @@ const ContactSection = () => {
                             ))}
                         </div>
 
-                        {/* Social Links */}
                         <div>
                             <h4 className="text-lg font-semibold mb-4 text-foreground">
                                 Follow Me
@@ -96,85 +95,67 @@ const ContactSection = () => {
                                         rel="noopener noreferrer"
                                         className="w-12 h-12 bg-card/50 backdrop-blur-sm border border-border/50 rounded-full flex items-center justify-center hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 group"
                                     >
-                                        <social.icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                                        <social.icon className="w-5 h-5 text-muted-foreground group-hover:text-primary" />
                                     </a>
                                 ))}
                             </div>
                         </div>
                     </div>
 
-                    {/* Contact Form */}
+                    {/* Formspree Contact Form */}
                     <Card className="p-8 bg-card/50 backdrop-blur-sm border border-border/50">
                         <h3 className="text-2xl font-semibold mb-6 text-foreground">
                             Send Message
                         </h3>
 
-                        <form className="space-y-6">
-                            <div className="grid md:grid-cols-2 gap-4">
+                        {state.succeeded ? (
+                            <p className="text-green-600 font-medium">Thank you! Your message has been sent.</p>
+                        ) : (
+                            <form onSubmit={handleSubmit} className="space-y-6">
+                                <div className="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <label className="block text-sm font-medium mb-2 text-foreground">
+                                            First Name
+                                        </label>
+                                        <Input type="text" name="firstName" required />
+                                    </div>
+                                    <div>
+                                        <label className="block text-sm font-medium mb-2 text-foreground">
+                                            Last Name
+                                        </label>
+                                        <Input type="text" name="lastName" required />
+                                    </div>
+                                </div>
+
                                 <div>
                                     <label className="block text-sm font-medium mb-2 text-foreground">
-                                        First Name
+                                        Email
                                     </label>
-                                    <Input
-                                        placeholder="Milan"
-                                        className="bg-background/50 border-border/50 focus:border-primary"
-                                    />
+                                    <Input type="email" name="email" required />
+                                    <ValidationError prefix="Email" field="email" errors={state.errors} />
                                 </div>
+
                                 <div>
                                     <label className="block text-sm font-medium mb-2 text-foreground">
-                                        Last Name
+                                        Message
                                     </label>
-                                    <Input
-                                        placeholder="Tetar"
-                                        className="bg-background/50 border-border/50 focus:border-primary"
-                                    />
+                                    <Textarea name="message" rows={5} required />
+                                    <ValidationError prefix="Message" field="message" errors={state.errors} />
                                 </div>
-                            </div>
 
-                            <div>
-                                <label className="block text-sm font-medium mb-2 text-foreground">
-                                    Email
-                                </label>
-                                <Input
-                                    type="email"
-                                    placeholder="you@example.com"
-                                    className="bg-background/50 border-border/50 focus:border-primary"
-                                />
-                            </div>
-
-                            <div>
-                                <label className="block text-sm font-medium mb-2 text-foreground">
-                                    Subject
-                                </label>
-                                <Input
-                                    placeholder="Let's work together"
-                                    className="bg-background/50 border-border/50 focus:border-primary"
-                                />
-                            </div>
-
-                            <div>
-                                <label className="block text-sm font-medium mb-2 text-foreground">
-                                    Message
-                                </label>
-                                <Textarea
-                                    placeholder="Tell me about your project or just say hello..."
-                                    rows={5}
-                                    className="bg-background/50 border-border/50 focus:border-primary resize-none"
-                                />
-                            </div>
-
-                            <Button
-                                type="submit"
-                                size="lg"
-                                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-medium"
-                            >
-                                Send Message
-                            </Button>
-                        </form>
+                                <Button
+                                    type="submit"
+                                    size="lg"
+                                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                                    disabled={state.submitting}
+                                >
+                                    {state.submitting ? "Sending..." : "Send Message"}
+                                </Button>
+                            </form>
+                        )}
                     </Card>
                 </div>
 
-                {/* Footer */}
                 <div className="text-center mt-16 pt-8 border-t border-border/50">
                     <p className="text-muted-foreground">
                         © 2025 Milan Tetar. Built with React, TypeScript & Tailwind CSS.
