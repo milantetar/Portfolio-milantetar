@@ -53,13 +53,6 @@ const BackgroundMusic = () => {
                 Your browser does not support the audio element.
             </audio>
 
-            {!isSupported && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black/80 z-50">
-                    <p className="text-3xl text-white animate-fade-in-scale font-semibold">
-                        enjoy. 🎵
-                    </p>
-                </div>
-            )}
         </>
     );
 };
