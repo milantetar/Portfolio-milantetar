@@ -61,7 +61,7 @@ const HeroSection = () => {
 
                         {/* Resume Button */}
                         <a
-                            href="https://drive.google.com/file/d/1DdHdfheLCAt_1n1RAdt9WWEh48X-vPte/view?usp=sharing"
+                            href="https://docs.google.com/document/d/1Xc9VHoLjg_zHhX1NPPvPq0Zf8XH73WQa/edit?usp=drive_link&ouid=116573738544034524456&rtpof=true&sd=true"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
